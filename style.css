@@ -1,0 +1,84 @@
+/* ===== RESET GLOBAL ===== */
+/* Remove padrões do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; /* Facilita controle de largura */
+  font-family: 'Roboto', sans-serif; /* Fonte do projeto */
+}
+
+/* ===== CONTAINER ===== */
+/* Centraliza e limita largura do conteúdo */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: #111;
+  color: #fff;
+  padding: 20px 0;
+}
+
+/* Menu horizontal */
+.menu {
+  list-style: none; /* Remove bolinhas */
+  display: flex; /* Coloca lado a lado */
+  gap: 20px; /* Espaço entre itens */
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: #f4f4f4;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.hero button:hover {
+  background: #333;
+}
+
+/* ===== CARDS ===== */
+.cards {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Quebra linha no mobile */
+}
+
+.card {
+  background: #eee;
+  padding: 40px;
+  margin: 10px;
+  border-radius: 8px;
+  min-width: 250px;
+  text-align: center;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
