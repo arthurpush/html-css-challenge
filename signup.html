@@ -1,61 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <!--
-  Arquivo inicial desafio Pagina Login e Cadastro com (HTML e CSS)
-  > www.devmentor.com.br
--->
+
+  <!-- Configurações básicas -->
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Fonte Roboto -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <title>Cadastro - Dev Mentor BR</title>
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <title>Cadastro - Dev Mentor BR</title>
+
 </head>
+
 <body>
 
-  <main class="container">
+<!-- CONTAINER PRINCIPAL -->
+<main class="container">
 
-    <section class="left">
-      <h1>Nova conta</h1>
+<!-- LADO ESQUERDO -->
+<section class="left">
 
-      <form class="form">
-        <input class="input" type="text" placeholder="Digite seu nome..."/>
+<h1>Nova conta</h1>
 
-        <input class="input" type="email" placeholder="Digite seu email..."/>
-  
-        <input class="input" type="password" placeholder="Digite sua senha..."/>
-        
-        <div class="area">
-            <input type="radio" name="termos" id="termos" class="termos" />
-            <span>Concordo com os termos.</span>
-        </div>
+<!-- FORMULÁRIO DE CADASTRO -->
+<form class="form" action="#" method="POST">
 
-        <button class="button" type="submit">Nova conta</button>
-        </form>
+<!-- CAMPO NOME -->
+<label for="name">Nome</label>
 
-        <div class="area">
-          <span class="link">Já possui uma conta? <a href="index.html">Faça login</a> </span>
-        </div>
+<input
+id="name"
+class="input"
+type="text"
+placeholder="Digite seu nome..."
+required
+>
 
-    </section>
+<!-- CAMPO EMAIL -->
+<label for="email">Email</label>
 
-    <section class="right">
-      <img class="info-img" src="assets/info.png" alt="Informações do projeto"/>
+<input
+id="email"
+class="input"
+type="email"
+placeholder="Digite seu email..."
+required
+>
 
-      <h2 class="subtitle">Leve sua carreira ao próximo nível.</h2>
-      <p class="description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, tenetur rerum praesentium nisi veniam voluptatibus quos, molestiae doloribus cupiditate maiores numquam adipisci. Necessitatibus aliquid consequatur illo iusto mollitia. Sint, facilis!
-      </p>
-    </section>
+<!-- CAMPO SENHA -->
+<label for="password">Senha</label>
 
-  </main>
-  
+<input
+id="password"
+class="input"
+type="password"
+placeholder="Digite sua senha..."
+required
+>
+
+<!-- TERMOS -->
+<div class="area">
+
+<input
+type="checkbox"
+id="termos"
+required
+>
+
+<label for="termos">
+Concordo com os termos de uso
+</label>
+
+</div>
+
+<!-- BOTÃO -->
+<button class="button" type="submit">
+Criar conta
+</button>
+
+</form>
+
+<!-- LINK PARA LOGIN -->
+<div class="area">
+
+<span class="link">
+Já possui uma conta?
+
+<a href="index.html">
+Faça login
+</a>
+
+</span>
+
+</div>
+
+</section>
+
+<!-- LADO DIREITO (INFORMATIVO) -->
+<section class="right">
+
+<img
+class="info-img"
+src="assets/info.png"
+alt="Informações do projeto"
+>
+
+<h2 class="subtitle">
+Leve sua carreira ao próximo nível.
+</h2>
+
+<p class="description">
+Projeto desenvolvido para praticar HTML e CSS criando
+uma tela de login e cadastro responsiva.
+</p>
+
+</section>
+
+</main>
+
 </body>
 </html>
